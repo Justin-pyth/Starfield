@@ -4,11 +4,11 @@ void setup(){
   size(500,500);
   p = new Particle[200];
   Phil = new Person();
-  for (int i = 0; i <25; i++){
-    p[i] = new OddballParticle();
+  for (int l = 0; l <25; l++){
+    p[l] = new OddballParticle();
   }
-  for(int i = 25; i < p.length; i++){
-    p[i] = new Particle(); 
+  for(int m = 25; m < p.length; m++){
+    p[m] = new Particle(); 
   }
 }
 

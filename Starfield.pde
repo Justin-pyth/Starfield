@@ -7,8 +7,8 @@ void setup(){
   for (int l = 0; l <25; l++){
     p[l] = new OddballParticle();
   }
-  for(int m = 25; m < p.length; m++){
-    p[m] = new Particle(); 
+  for(int o = 25; o < p.length; o++){
+    p[o] = new Particle(); 
   }
 }
 
@@ -62,12 +62,10 @@ class OddballParticle extends Particle{
     myAngle= (Math.random()*Math.PI);
     mySpeed=Math.random()*5;
   }
-  @Override 
   public void move(){
     myY+=Math.sin(myAngle)*mySpeed;
     myX+=Math.cos(myAngle)*mySpeed;
   }
-  @Override
   public void show(){
     fill(98,52,18);
     rect((float)myX, (float)myY, 30,30,50);
@@ -80,6 +78,9 @@ class Person{
    fill(255,255,0);
    ellipse(50,50,10,40);
    ellipse(80,50,10,40);
+   arc(65,80,70,50,0,PI);
+   fill(0,0,0);
+   arc(65,80,70,40,0,PI);
    //Street
    fill(105,105,105);
    quad(0,500,200,250,300,250,500,500);
